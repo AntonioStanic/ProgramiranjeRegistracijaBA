@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.programiranjeregistracijaba">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="@string/test"
+        android:icon="@mipmap/povecalo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/povecalo"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".AutomobiliOsobe" />
+        <activity android:name=".AutomatskoPretrazivanjeOsoba" />
+        <activity
+            android:name=".DodajOsobuAktivnost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DodajPolicajcaAktivnost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".testtest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IzdajKaznu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AutomatskoPretrazivanjeAutomobila"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PretraziAutomobil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UslikajTablice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PretraziOsobu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistracijaAktivnost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PocetnaAktivnost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrijavaAktivnost"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" /> <!-- optional (needed if default theme has no action bar) -->
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>
